@@ -85,7 +85,7 @@ export default class DockerContainer {
     // https://github.com/serverless/serverless/blob/v1.57.0/lib/plugins/aws/invokeLocal/index.js#L291-L293
     const dockerArgs = [
       "-v",
-      `${codeDir}:/var/task:${permissions},delegated`,
+      `${codeDir}:/var/runtime:${permissions},delegated`,
       "-p",
       8080,
       "-e",
